@@ -28,6 +28,13 @@ public class UsrArticleController {
 	}
 	
 	
+	@RequestMapping("/usr/article/getArticle")
+	@ResponseBody
+	public Article getArtice(int id) {
+		return articleService.getArticle(id);
+	}
+	
+	
 	
 
 	
