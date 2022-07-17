@@ -40,6 +40,12 @@ public class ArticleRepository {
 		}
 		return null;
 	}
+
+	public void doDelete(int id) {
+		Article article = getArticle(id);
+		articles.remove(article);
+		
+	}
 	
 	
 	
