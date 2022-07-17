@@ -50,6 +50,11 @@ public class ArticleService {
 		articleRepository.doDelete(id);
 	}
 
+
+	public void doModify(int id,String title,String body) {
+		articleRepository.doModify(id, title, body);
+	}
+
 	
 	
 	

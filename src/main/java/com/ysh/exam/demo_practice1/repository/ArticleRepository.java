@@ -46,6 +46,12 @@ public class ArticleRepository {
 		articles.remove(article);
 		
 	}
+
+	public void doModify(int id, String title, String body) {
+		Article article = getArticle(id);
+		article.setTitle(title);
+		article.setBody(body);
+	}
 	
 	
 	
